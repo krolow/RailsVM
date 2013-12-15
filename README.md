@@ -14,7 +14,7 @@ Setup of vagrant to run rails projects
 - compass
 - yoeman
 
-## Intall
+## Install
 
 ```bash
 git clone https://github.com/krolow/RailsVM
