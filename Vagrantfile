@@ -9,8 +9,8 @@ Vagrant.configure("2") do |config|
     v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
     v.customize ["modifyvm", :id, "--memory", 1024]
     v.customize ["modifyvm", :id, "--name", "Rails VM"]
-    v.customize ['modifyvm', :id, '--usb', 'on']
-    v.customize ["modifyvm", :id, "--usbehci", "on"]
+    #v.customize ['modifyvm', :id, '--usb', 'on']
+    #v.customize ["modifyvm", :id, "--usbehci", "on"]
   end
 
   config.vm.synced_folder "../", "/home/vagrant/project", id: "vagrant-root", :mount_options => ["dmode=777","fmode=777"]
